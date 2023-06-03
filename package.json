@@ -1,0 +1,17 @@
+{
+  "name": "harver-exercise",
+  "version": "1.0.0",
+  "description": "This is for the Harver Exercise",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "Pankajan Satkunam",
+  "license": "ISC",
+  "dependencies": {
+    "merge-img": "^2.1.3",
+    "minimist": "^1.2.8",
+    "nodemon": "^2.0.22"
+  }
+}
