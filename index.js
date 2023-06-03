@@ -2,16 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const request = require('request');
 const mergeImg = require('merge-img');
-const argv = require('minimist')(process.argv.slice(2));
-
-const {
-  greeting = 'Hello',
-  who = 'You',
-  width = 400,
-  height = 500,
-  color = 'Pink',
-  size = 100,
-} = argv;
+const { greeting, who, width, height, color, size } = require("./config/config");
 
 const firstReq = {
   url: `https://cataas.com/cat/says/${encodeURIComponent(greeting)}?width=${width}&height=${height}&color=${color}&s=${size}`,
