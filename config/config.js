@@ -3,6 +3,7 @@ const minimist = require("minimist");
 
 const argv = minimist(process.argv.slice(2));
 
+//configuration
 const {
   greeting = "Hello",
   who = "You",
@@ -12,6 +13,7 @@ const {
   size = 100,
 } = argv;
 
+//export the configurations
 module.exports = {
   greeting,
   who,
