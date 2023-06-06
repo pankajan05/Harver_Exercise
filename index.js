@@ -2,8 +2,8 @@
 const config = require("./config/config");
 
 //import the necessary modules
-const { downloadImage } = require("./components/image-downloader");
-const { mergeImages } = require("./components/image-merger");
+const { downloadImage } = require("./util/image-downloader");
+const { mergeImages } = require("./util/image-merger");
 const { saveImage } = require("./util/file-writer");
 
 const firstUrl = `https://cataas.com/cat/says/${encodeURIComponent(
