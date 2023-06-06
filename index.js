@@ -1,12 +1,21 @@
-// app.js
+// Retrieve configuration from config module
 const config = require("./config/config");
+
+//import the necessary modules
 const { downloadImage } = require("./components/image-downloader");
 const { mergeImages } = require("./components/image-merger");
 const { saveImage } = require("./util/file-writer");
 
-const firstUrl = `https://cataas.com/cat/says/${encodeURIComponent(config.greeting)}?width=${config.width}&height=${config.height}&color=${config.color}&s=${config.size}`;
-const secondUrl = `https://cataas.com/cat/says/${encodeURIComponent(config.who)}?width=${config.width}&height=${config.height}&color=${config.color}&s=${config.size}`;
-
+const firstUrl = `https://cataas.com/cat/says/${encodeURIComponent(
+  config.greeting
+)}?width=${config.width}&height=${config.height}&color=${config.color}&s=${
+  config.size
+}`;
+const secondUrl = `https://cataas.com/cat/says/${encodeURIComponent(
+  config.who
+)}?width=${config.width}&height=${config.height}&color=${config.color}&s=${
+  config.size
+}`;
 
 /**
  * Generates a cat card by downloading the necessary images, merging them, and saving the result.
@@ -26,8 +35,8 @@ const secondUrl = `https://cataas.com/cat/says/${encodeURIComponent(config.who)}
  * await generateCatCard();
  * console.log("The file was saved!");
  * }
- * 
- */ 
+ *
+ */
 async function generateCatCard() {
   try {
     //download the first images
@@ -51,7 +60,6 @@ async function generateCatCard() {
     console.error("An error occurred:", err);
   }
 }
-
 
 //generate the cat card
 generateCatCard();
