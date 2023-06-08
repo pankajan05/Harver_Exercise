@@ -18,34 +18,37 @@ To use this project, you need to have Node.js installed on your machine.
 
 #### Clone the repository:
 
-bash
+```
 git clone https://github.com/pankajan05/Harver_Exercise
-
+```
 
 #### Navigate to the project directory:
 
-bash
+```
 cd harver-exercise
-
+```
 
 #### Install dependencies:
 
-bash
+```
 npm install
+```
 
 #### Start the Application
 To start the application, run the following command:
 
-bash
+```
 npm start
+```
 
 This will execute the start script defined in the package.json file and run the application using Node.js.
 
 #### Development Mode
 During development, you can use nodemon to automatically restart the application whenever changes are made. Run the following command:
 
-bash
+```
 npm run dev
+```
 This will execute the dev script defined in the package.json file and start the application with nodemon.
 
 ### Author
